@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+    h1 {text-align: center; font-size: 70px; left: 0px; top: 50px;} 
+    h2 {text-align: center; font-size: 30px; left: 0px; top: 0px;}
+    p {text-align: center; font-size: 20px}
+
+    body {
+        background: linear-gradient(
+            to bottom, 
+            rgb(252, 251, 251) 0%, 
+            rgba(116, 201, 230, 0.856) 2%,
+            rgb(252, 251, 251) 25%);
+        background-size: auto 1600px;
+    }
+
+    .face1 {background-color: #fcba03; width: 200px; height: 200px; border-radius: 100%; position: absolute; left: 1200px; top: 200px;}
+    .mouth1 {position: absolute; background-color: black; width: 100px; height: 50px; border-radius: 7px 7px 100px 100px; top: 120px; left: 50px;}
+    .eye-section1 {position: absolute; width: 100px; height: 50px; top: 40px; left: 50px;}
+    .left-eye1 {background-color: #4f2103; width: 20px; height: 25px; border-radius: 50px; position: absolute; top: 20px; left: 5px;}
+    .right-eye1 {background-color: #4f2103; width: 20px; height: 25px; border-radius: 50px; position: absolute; top: 20px; left: 75px;}
+
+    .face2 {background-color: #fcba03; width: 200px; height: 200px; border-radius: 100%; position: absolute; left: 340px; top: 200px;}
+    .mouth2 {position: absolute; background-color: black; width: 100px; height: 20px; border-radius: 5px 5px 5px 5px; top: 120px; left: 50px;}
+    .eye-section2 {position: absolute; width: 100px; height: 50px; top: 40px; left: 50px;}
+    .left-eye2 {background-color: #4f2103; width: 20px; height: 20px; border-radius: 50px; position: absolute; top: 20px; left: 5px;}
+    .right-eye2 {background-color: #4f2103; width: 20px; height: 20px; border-radius: 50px; position: absolute; top: 20px; left: 75px;}
+
+    .face3 {background-color: #fcba03; width: 200px; height: 200px; border-radius: 100%; position: absolute; left: 625px; top: 200px;}
+    .mouth3 {position: absolute; background-color: black; width: 100px; height: 50px; border-radius: 100px 100px 7px 7px; top: 100px; left: 50px;}
+    .eye-section3 {position: absolute; width: 100px; height: 50px; top: 40px; left: 50px;}
+    .left-eye3 {background-color: #4f2103; width: 20px; height: 25px; border-radius: 25px; position: absolute; top: 20px; left: 5px;}
+    .right-eye3 {background-color: #4f2103; width: 20px; height: 25px; border-radius: 95px; position: absolute; top: 20px; left: 75px;}
+
+    .face4 {background-color: #fcba03; width: 200px; height: 200px; border-radius: 100%; position: absolute; left: 925px; top: 200px;}
+    .mouth4 {position: absolute; background-color: black; width: 100px; height: 20px; border-radius: 5px 5px 5px 5px; top: 120px; left: 50px;}
+    .eye-section4 {position: absolute; width: 100px; height: 50px; top: 40px; left: 50px;}
+    .left-eye4 {background-color: #4f2103; width: 20px; height: 20px; border-radius: 25px; position: absolute; top: 20px; left: 5px;}
+    .right-eye4 {background-color: #4f2103; width: 20px; height: 20px; border-radius: 95px; position: absolute; top: 20px; left: 75px;}
+
+    label {text-align: center; font-size: 25px; left: 0px; top: -10px;}
+    .centered {display: flex; justify-content: center;}
+    .button1 {padding: 10px 24px; font-size: 20px; background-color: #4CAF50; border: 2px solid #4CAF50; border-radius: 8px; color: white}
+
+    section {transform: translate(-50%, -50%); position: absolute; top: 750px; left: 50%; width: 60%;}
+    .poll-option {margin-bottom: 15px;}
+    span.poll-option__label {font-weight: bold;}
+    table.poll-option__result {width: 100%;}
+    tr, td {padding: 0;}
+    td:nth-child(odd) {width: 40px;}
+    td:nth-child(even) {border: 0; height: 100%; position: relative; vertical-align: center; width: 100%;}
+    td:first-child {padding-right: 20px;}
+    td:last-child {padding-left: 20px;}
+    span {border-radius: 3px; display: block; height: 6px; position: absolute; top: 50%; transform: translateY(-50%);}
+    span:first-child {background: rgba(255, 255, 255, 0.1); width: 50%;}
+    span:last-child {background: aliceblue; background-image: linear-gradient(to right, #ff5a00, #e3a417);}
+
+</style> 
+
+<body>
+    <div class="centered">
+    <h1 style="font-family:Trebuchet MS">WORLD HAPPINESS CALCULATOR</h1>
+    </div>
+    
+    <div class="face1">
+        <div class="mouth1"></div>
+        <div class="eye-section1">
+            <div class="left-eye1"></div>
+            <div class="right-eye1"></div>
+        </div>
+    </div>
+    
+    <div class="face2">
+        <div class="mouth2"></div>
+        <div class="eye-section2">
+            <div class="left-eye2"></div>
+            <div class="right-eye2"></div>
+        </div>
+    </div>
+    
+    <div class="face3">
+        <div class="mouth3"></div>
+        <div class="eye-section3">
+          <div class="left-eye3"></div>
+          <div class="right-eye3"></div>
+        </div>
+    </div>
+
+    <div class="face4">
+        <div class="mouth4"></div>
+        <div class="eye-section4">
+            <div class="left-eye4"></div>
+            <div class="right-eye4"></div>
+        </div>
+    </div>
+    </div>  
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2 style="font-family:Helvetica">How Are You Feeling Today?</h2>
+
+    <div class="centered">
+    <form>
+        <input type="radio" id="not" name="happiness" value="not">
+        <label for="html">Not Happy</label>
+        <input type="radio" id="somewhat" name="happiness" value="somewhat">
+        <label for="css">Somewhat Happy</label>
+        <input type="radio" id="neutral" name="happiness" value="neutral">
+        <label for="javascript">Neutral</label>
+        <input type="radio" id="mostly" name="happiness" value="mostly">
+        <label for="html">Mostly Happy</label>
+        <input type="radio" id="very" name="happiness" value="very">
+        <label for="css">Very Happy</label>
+    </form>
+    </div><br><br>
+
+    <div class="centered">
+    <form>
+        <input type="submit" value="Submit" class="button1">
+    </form>
+    </div>
+
+    <section><br><br><br><br><br><br>
+        <div class="poll-option">
+          <table class="poll-option__result">
+            <tr>
+              <td>Not Happy</td>
+              <td>
+                <span></span>
+                <span style="width: 75%;"></span>
+              </td>
+              <td>234</td>
+              <td>13%</td>
+            </tr>
+          </table>
+        </div>
+        
+        <div class="poll-option">
+          <table class="poll-option__result">
+            <tr>
+              <td>Somewhat Happy</td>
+              <td>
+                <span></span>
+                <span style="width: 88%;"></span>
+              </td>
+              <td>350</td>
+              <td>20%</td>
+            </tr>
+          </table>
+        </div>
+        
+        <div class="poll-option">
+          <table class="poll-option__result">
+            <tr>
+              <td>Neutral</td>
+              <td>
+                <span></span>
+                <span style="width: 95%;"></span>
+              </td>
+              <td>152</td>
+              <td>30%</td>
+            </tr>
+          </table>
+        </div>
+
+      <div class="poll-option">
+        <table class="poll-option__result">
+          <tr>
+            <td>Mostly Happy</td>
+            <td>
+              <span></span>
+              <span style="width: 90%;"></span>
+            </td>
+            <td>210</td>
+            <td>22%</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="poll-option">
+        <table class="poll-option__result">
+          <tr>
+            <td>Very Happy</td>
+            <td>
+              <span></span>
+              <span style="width: 80%;"></span>
+            </td>
+            <td>175</td>
+            <td>15%</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+</body>
+
+</html>
